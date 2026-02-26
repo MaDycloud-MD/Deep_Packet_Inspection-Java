@@ -134,12 +134,13 @@ java -jar dpi-engine.jar input.pcap output.pcap \
 ``` bash 
 java -jar dpi-engine.jar input.pcap output.pcap \
 --block-app YouTube --block-app Netflix --block-app TikTok \
---unblock-app Netflix
+--unblock-app Netflix \
+--save-rules rules.txt
 ```
 ### Net result: YouTube and TikTok blocked, Netflix passes through
 
 ------------------------------------------------------------------------
-
+ 
 ## How It Works — The Full Journey of One Packet
         ```
         test_dpi.pcap
